@@ -4,7 +4,10 @@ import Layout from '../layouts/Layout.astro';
 
 <Layout title="Bierkastenlauf Karlsruhe 2022">
 	<main>
-		<h1> <span class="text-gradient">Bierkastenlauf Karlsruhe 2022</span></h1>
+		<div class="header">
+			<h1> <span class="text-gradient">Bierkastenlauf Karlsruhe 2022</span></h1>
+			<img src="/beerBox.svg" class="logo">
+		</div>
 		<ul role="list" class="link-card-grid">
 			<li>
 				<a href="#infos">
@@ -13,29 +16,48 @@ import Layout from '../layouts/Layout.astro';
 			</li>
 			<li>
 				<a href="#regeln">
-					<img src="/infoBeer.svg">
+					<img src="/rulesBeer.svg">
 				</a>
 			</li>
 			<li>
+
 				<a href="#strecke">
-					<img src="/infoBeer.svg">
+					<img src="/routeBeer.svg">
 				</a>
 			</li>
 			<li>
 				<a href="#team">
-					<img src="/infoBeer.svg">
+					<img src="/teamBeer.svg">
 				</a>
 			</li>
 		</ul>
 		<hr>
-		<img src="/beerBox.svg" class="logo">
 		<section id="infos">
 			<div>
 				<h2>
 					Infos
 				</h2>
 				<p>
-					Bla
+					Herzlich willkommen zum Bierkastenlauf Karlsruhe 2022! <br><br>
+					Auf dieser Website findet ihr alle Informationen und Regeln des diesjährigen Bierkastenlaufs. Für diejenigen, die noch nicht von diesem kulturreichen und weltbekannten Event gehört haben: Der Bierkastenlauf ist ein von einer <a href="#team">Gruppe netter Menschen</a> organisiertes Sportevent, welches immer nach dem Kolloquium der 4. Semester statt findet. Diese Jahr fällt der Bierkastenlauf auf den 30.09.2022. <br>
+					Beim Bierkastenlauf geht es darum in 4er Teams einen Kasten Bier zu einem Ziel zu tragen. Da ein voller Kasten für viel extra Gewicht sorgt, muss er bei Überschreitung der Ziellinie leer sein (was auch sonst). Mehr zu den genauen Regeln <a href="#regeln">hier</a>. Da der Bierakstenlauf vor allem dazu dienen soll, neue Leute kennenzulernen, ist die Anmeldung nur in 2er Teams möglich, welche dann anhand eines höchst komplexen Algorithmus zu ihrem perfekten 2er-Teampartner finden (Tinder wäre neidisch auf ein so gutes Match-System). Um euch und euren Lieblingstrinkpartner anzumelden, benutzt einfach <a href="https://forms.gle/yt8aeRPeuh68hi3Q8">dieses Forumular</a> und füllt die Fragen wahrheitsgemäß aus, um eine perfekte Teamzuweisung zu garantieren. 
+				</p>
+				<h4>
+					Eure Benefits
+				</h4>
+				<p>
+					Auch wenn die Teilnahme am Bierkastenlauf eigentlich schon Vorteil genug ist, hier noch eine Liste an tollen Vorteilen, die ihr genießt, wenn ihr am Bierakstenlauf teilnehmt. 
+					<ul>
+						<li>Ihr nehmt am Bierkastenlauf teil (obviously)</li>
+						<li>Ihr trinkt 2.5 l Bier</li>
+						<li>Sport ist gesund</li>
+						<li>Tolle Preise für die Gewinner</li>
+						<li>Jeder Läufer ist ein Gewinner!</li>
+						<li>(spirituelle) Erweiterung des Horizonts!</li>
+						<li>(für Erstis) Vorbereitung der Leber aufs Studentenleben</li>
+						<li>(für Erstis) Neue Connections (auch alte Hasen)</li>
+						<li>(für Anreisende) Die volle Kerlsruhe Experience</li>
+					</ul>
 				</p>
 			</div>
 		</section>
@@ -45,7 +67,18 @@ import Layout from '../layouts/Layout.astro';
 					Regeln
 				</h2>
 				<p>
-					Bla
+					Zu jedem ordentlichen Sportevent gehört natürlich ein Satz Regeln. Die folgenden Regeln haben sich bewährt, um unärenhaftes Verhalten zu verhindern:
+					<ul>
+						<li>Alle Teilnehmenden müssen sich um 18 Uhr an der <a href="https://goo.gl/maps/GgkjwAUnHBPm7kaL7">DHBW</a> einfinden.</li>
+						<li>Jedes Team muss seinen Bierkasten selbst organisieren</li>
+						<li>Die Biersorte ist egal, sofern der Alkoholgehalt &#8805 4.9% ist</li>
+						<li>Der Bierkasten muss die Größe 20x0.5l haben</li>
+						<li>Alle Kronkorken müssen mit über die Ziellinie gebracht werden: Umweltverschmutzung wird nicht geduldet!</li>
+						<li>Das gesamte Bier muss bis mindestens 5 min nach Überschreitung der Ziellinie im Körper bleiben (nicht kotzen). Andernfalls kann das Team nicht mehr den ersten Platz machen und bekommt eine Strafe</li>
+						<li>Es darf nicht von der vorgegebenen <a href="#route">Strecke</a> abgewischen werden</li>
+						<li>Weitere Überraschungsregeln ;)</li>
+					</ul>
+					Sollte eine der oberen Regeln gebrochen werden, legt das Kremium eine Strafe für das Team fest. Diese kann von Strafshots bis hin zu Disqualifikation oder Ähnlichem gehen.
 				</p>
 			</div>
 		</section>
@@ -55,7 +88,7 @@ import Layout from '../layouts/Layout.astro';
 					Strecke
 				</h2>
 				<p>
-					Bla
+					Wie jedes Jahr startet der Bierkastenlauf an der <a href="https://goo.gl/maps/GgkjwAUnHBPm7kaL7">DHBW</a> und endet im Schloß/ Fasanengarten. Außerdem werden entlang der Strecke Sticker zur besseren Orientierung angebracht. 
 				</p>
 			</div>
 		</section>
@@ -76,6 +109,7 @@ import Layout from '../layouts/Layout.astro';
 </Layout>
 
 <style>
+	@import url('https://fonts.googleapis.com/css2?family=GFS+Neohellenic:wght@400;700&display=swap');
 	:root {
 		--astro-gradient: linear-gradient(0deg, #233D11, #233D11);
 	}
@@ -87,13 +121,9 @@ import Layout from '../layouts/Layout.astro';
 	main {
 		margin: auto;
 		padding: 1em;
-		max-width: 60ch;
+		max-width: 80ch;
+		font-family: 'GFS Neohellenic', sans-serif;
 	}
-
-	li{
-		list-style: none;
-	}
-
 	hr{
 		height: 1px;
 		background-color: #233D11;
@@ -120,7 +150,11 @@ import Layout from '../layouts/Layout.astro';
 		}
 	}
 	.logo{
-		max-width: 60ch;
+		max-width: 30ch;
+	}
+	.header{
+		display: flex;
+		margin-bottom: 2ch;
 	}
 
 	.instructions {
@@ -144,6 +178,6 @@ import Layout from '../layouts/Layout.astro';
 		grid-template-columns: auto auto auto auto;
 		gap: 1rem;
 		padding: 0;
-		background-color: #233D11;
+		list-style: none;
 	}
 </style>
