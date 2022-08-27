@@ -1,19 +1,78 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Bottle from '../components/Bottle.astro'
 ---
 
 <Layout title="Bierkastenlauf Karlsruhe 2022">
 	<main>
 		<h1> <span class="text-gradient">Bierkastenlauf Karlsruhe 2022</span></h1>
 		<ul role="list" class="link-card-grid">
-
-			<Bottle
-				title="Route"
-				body="Supercharge your project with new frameworks and libraries."
-			/>
+			<li>
+				<a href="#infos">
+					<img src="/infoBeer.svg">
+				</a>
+			</li>
+			<li>
+				<a href="#regeln">
+					<img src="/infoBeer.svg">
+				</a>
+			</li>
+			<li>
+				<a href="#strecke">
+					<img src="/infoBeer.svg">
+				</a>
+			</li>
+			<li>
+				<a href="#team">
+					<img src="/infoBeer.svg">
+				</a>
+			</li>
 		</ul>
+		<hr>
+		<img src="/beerBox.svg" class="logo">
+		<section id="infos">
+			<div>
+				<h2>
+					Infos
+				</h2>
+				<p>
+					Bla
+				</p>
+			</div>
+		</section>
+		<section id="regeln">
+			<div>
+				<h2>
+					Regeln
+				</h2>
+				<p>
+					Bla
+				</p>
+			</div>
+		</section>
+		<section id="strecke">
+			<div>
+				<h2>
+					Strecke
+				</h2>
+				<p>
+					Bla
+				</p>
+			</div>
+		</section>
+		<section id="team">
+			<div>
+				<h2>
+					Organisations Team
+				</h2>
+				<p>
+					Bla
+				</p>
+			</div>
+		</section>
 	</main>
+	
+
+
 </Layout>
 
 <style>
@@ -31,6 +90,15 @@ import Bottle from '../components/Bottle.astro'
 		max-width: 60ch;
 	}
 
+	li{
+		list-style: none;
+	}
+
+	hr{
+		height: 1px;
+		background-color: #233D11;
+		border-style: none;
+	}
 	.text-gradient {
 		font-weight: 900;
 		background-image: var(--astro-gradient);
@@ -51,6 +119,9 @@ import Bottle from '../components/Bottle.astro'
 			background-position-y: 80%;
 		}
 	}
+	.logo{
+		max-width: 60ch;
+	}
 
 	.instructions {
 		line-height: 1.6;
@@ -70,8 +141,9 @@ import Bottle from '../components/Bottle.astro'
 
 	.link-card-grid {
 		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
+		grid-template-columns: auto auto auto auto;
 		gap: 1rem;
 		padding: 0;
+		background-color: #233D11;
 	}
 </style>
