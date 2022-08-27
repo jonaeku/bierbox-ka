@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ca248671-5506-442b-aa1a-290ad38c9b14" name="Changes" comment="" />
+    <list default="true" id="ca248671-5506-442b-aa1a-290ad38c9b14" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/public/Box.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/beer-bottle-svgrepo-com.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Bottle.astro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Card.astro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/Layout.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/Layout.astro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/index.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.astro" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,6 +22,7 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2DXUUzNXVvFagZ3wRM8jRn61omW" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -22,8 +31,15 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\I538779\WebstormProjects\bierbox-ka\public" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -34,11 +50,17 @@
       <option name="presentableId" value="Default" />
       <updated>1660844942718</updated>
       <workItem from="1660844944604" duration="185000" />
-      <workItem from="1660912293446" duration="710000" />
+      <workItem from="1660912293446" duration="1165000" />
+      <workItem from="1661236773084" duration="996000" />
+      <workItem from="1661329718103" duration="4441000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

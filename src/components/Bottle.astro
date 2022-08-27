@@ -1,0 +1,61 @@
+---
+export interface Props {
+	title: string;
+	body: string;
+}
+
+const { title, body } = Astro.props as Props;
+---
+
+<li class="bottle">
+	<div class="bottleDiv">
+		<h2>
+			{title}
+			<span>&rarr;</span>
+		</h2>
+		<p>
+			{body}
+		</p>
+	</div>
+</li>
+<style>
+
+.bottle {
+		list-style: none;
+		display: flex;
+		padding: 0.15rem;
+		background-size: 400%;
+		border-radius: 0.5rem;
+		background-position: 100%;
+	}
+.bottleDiv {
+		background-image: url("/beer-bottle-svgrepo-com.svg");
+	}
+h2 {
+		margin: 0;
+		transition: color 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+	}
+
+p {
+		margin-top: 0.75rem;
+		margin-bottom: 0;
+	}
+
+h2 span {
+		display: inline-block;
+		transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+	}
+
+	.bottle:is(:hover, :focus-within) {
+		background-position: 0;
+	}
+
+	.bottle:is(:hover, :focus-within) h2 {
+		color: #4f39fa;
+	}
+
+	.bottle:is(:hover, :focus-within) h2 span {
+		will-change: transform;
+		transform: translateX(2px);
+	}
+</style>
