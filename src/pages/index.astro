@@ -131,9 +131,7 @@ import Layout from '../layouts/Layout.astro';
 						<li>Born for Korn</li>
 						<li>Schaut beim rausreißen von Rauchmelden zu</li>
 					</ul>
-					</div>
-				</div>
-				<div class="name-grid">
+					</div>	
 					<div class="name-grid-element">
 						<h3>Jakob der Wein-Senpai</h3>
 						<p><u>Besondere Fähigkeiten/ Eigenschaften:</u></p>
@@ -214,33 +212,7 @@ import Layout from '../layouts/Layout.astro';
 	.landingPage{
 			height: auto;
 	}
-	@media (max-width: 400px) { 
-		.header{
-			display: none;
-		}
-		h1 {
-			text-align: center;
-			margin-bottom: 2ch;
-		}
-		.mobile{
-			display: flex;
-		}
-		.link-card-grid{
-			display: flex;
-		}
-		.logo{
-			margin-left: auto;
-			margin-right: auto;
-			margin-bottom: 4ch;
-		}
-		.landingPage{
-			max-height: 100vh ;
-			display: flex;
-			flex-direction: column;
-			justify-content: space-between;
-		}
-	 }
-
+	
 	.instructions {
 		line-height: 1.6;
 		margin: 1rem 0;
@@ -286,7 +258,6 @@ import Layout from '../layouts/Layout.astro';
 	}
 	.name-grid {
 		display: grid;
-		
 		grid-template-columns: auto auto;
 	}
 	.name-grid-element {
@@ -301,4 +272,35 @@ import Layout from '../layouts/Layout.astro';
 	#team {
 		padding-top: 130px;
 	}
+	@media (max-width: 450px) { 
+		.header{
+			display: none;
+		}
+		h1 {
+			text-align: center;
+			margin-bottom: 2ch;
+		}
+		.mobile{
+			display: flex;
+		}
+		.link-card-grid{
+			display: flex;
+		}
+		.logo{
+			margin-left: auto;
+			margin-right: auto;
+			margin-bottom: 4ch;
+		}
+		.landingPage{
+			max-height: 100vh ;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+		}
+		div .name-grid{
+			display: flex;
+			flex-direction: column;
+		}
+	 }
+
 </style>
