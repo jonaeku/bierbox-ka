@@ -115,50 +115,42 @@ import Layout from '../layouts/Layout.astro';
 				<h2>
 					Organisations Team
 				</h2>
-				<table class="name-grid">
-					<tr>
-						<td>
-							Name
-						</td>
-						<td>Cesar</td>
-						<td>Fabi</td>
-						<td>Jakob</td>
-						<td>Lukas</td>
-					</tr>
-					<tr>
-						<td>
-							Spitzname
-						</td>
-						<td>
-							Rauchmelderschreck
-						</td>
-						<td>
-							Korn-Senpai
-						</td>
-						<td>
-							Wein-Senpai
-						</td>
-						<td>Der KORNaissur</td>
-					</tr>
-					<tr>
-						<td>Jahrgang</td>
-						<td>2021</td>
-						<td>2020</td>
-						<td>2020</td>
-						<td>2021</td>
-					</tr>
-					<tr>
-						<td>Besondere Fähigkeiten</td>
-						<td>Zähne sind auch Bieröffner.<br>
-							Korn-Padawan.<br></td>
-						<td>Born for Korn.<br>
-							Schaut beim rausreißen von Rauchmelden zu.</td>
-						<td>Schärfe ist ein Fremdwort.<br>
-						Probleme bei Mischkonsum ebenso.</td>
-						<td>Berentzen Markenbotschaftler.<br>
-							Zahnlückenjohnny.</td>
-					</tr>
-				</table>
+				<div class="name-grid">
+					<div class="name-grid-element">
+						<h3>Cesar der Rauchmelderschreck</h3>
+						<p><u>Besondere Fähigkeiten/ Eigenschaften:</u></p>
+						<ul>
+							<li>Zähne sind auch Bieröffner</li>
+							<li>Korn-Padawan</li>
+						</ul>
+					</div>
+					<div class="name-grid-element">
+						<h3>Fabi der Korn-Senpai</h3>
+					<p><u>Besondere Fähigkeiten/ Eigenschaften:</u></p>
+					<ul>
+						<li>Born for Korn</li>
+						<li>Schaut beim rausreißen von Rauchmelden zu</li>
+					</ul>
+					</div>
+				</div>
+				<div class="name-grid">
+					<div class="name-grid-element">
+						<h3>Jakob der Wein-Senpai</h3>
+						<p><u>Besondere Fähigkeiten/ Eigenschaften:</u></p>
+						<ul>
+							<li>Schärfe ist ein Fremdwort</li>
+							<li>Probleme bei Mischkonsum ebenso</li>
+						</ul>
+					</div>
+					<div class="name-grid-element">
+						<h3>Lukas der KORNaissur</h3>
+					<p><u>Besondere Fähigkeiten/ Eigenschaften:</u></p>
+					<ul>
+						<li>Berentzen Markenbotschaftler</li>
+						<li>Zahnlückenjohnny</li>
+					</ul>
+					</div>
+				</div>
 			</div>
 		</section>
 	</main>
@@ -247,10 +239,6 @@ import Layout from '../layouts/Layout.astro';
 			flex-direction: column;
 			justify-content: space-between;
 		}
-		.name-grid {
-			border-spacing: 2px;
-			font-size: x-small;
-		}
 	 }
 
 	.instructions {
@@ -297,10 +285,12 @@ import Layout from '../layouts/Layout.astro';
 		transform: scale(1.05);
 	}
 	.name-grid {
-		border-spacing:15px;
+		display: grid;
+		
+		grid-template-columns: auto auto;
 	}
-	.name-grid-column {
-		height: 100px;
+	.name-grid-element {
+		width: 40ch;
 	}
 	#strecke {
 		height: 400px
